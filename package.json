@@ -1,0 +1,14 @@
+{
+  "name": "node-graphql-mysql-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "dev" : "DEBUG=express:* nodemon --exec node lib/index.js"
+  },
+  "keywords": [],
+  "author": "amit.arora15@gmail.com",
+  "license": "ISC"
+}
