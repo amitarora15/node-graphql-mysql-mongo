@@ -1,2 +1,5 @@
 .idea/
 node-graphql-mysql-mongo.iml
+node_modules/
+logs/
+logs
