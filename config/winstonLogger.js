@@ -14,7 +14,6 @@ let winstonLogger = winston.createLogger({
         })
     ),
     transports: [
-        new winston.transports.Console(),
         new winston.transports.File({
             dirname: './logs',
             filename: 'content-partner_error.log',
@@ -24,9 +23,10 @@ let winstonLogger = winston.createLogger({
             dirname: './logs',
             filename: 'content-partner_app.log',
             zippedArchive: false,
-            maxsize: 10000000,
+            maxsize: 1000000,
             maxFiles: 2
-        })]
+        }), new winston.transports.Console()],
+
 });
 
 module.exports = {winstonLogger};

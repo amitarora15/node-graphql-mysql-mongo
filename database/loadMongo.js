@@ -10,12 +10,12 @@ MongoClient.connect(mongoConfig.url, (err, mongoClient) => {
     db.collection('content-partner').insertMany([
         {
             cpId: 1,
-            moviesCount: 2,
+            movieCount: 2,
             showCount: 0
         },
         {
-            cpId: 1,
-            moviesCount: 1,
+            cpId: 2,
+            movieCount: 1,
             showCount: 2
         }
     ]).then(response => {
