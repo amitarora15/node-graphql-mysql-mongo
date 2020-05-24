@@ -25,7 +25,8 @@ Following technologies used for implementing this application
 
 
 **Sample Queries**
-```query greeting($greetName: String!) {
+```
+query greeting($greetName: String!) {
    greet(name: $greetName)
  }
  
